@@ -1,47 +1,56 @@
-Conversor de Moedas em Java
-Este projeto implementa um Conversor de Moedas em Java que utiliza a API ExchangeRate-API para obter taxas de câmbio em tempo real e a biblioteca Gson para manipular dados JSON.
 
-Funcionalidades
-Obtenção dinâmica de taxas de câmbio da API ExchangeRate-API.
-Conversão entre pelo menos seis moedas diferentes.
-Interface de linha de comando (CLI) para interação com o usuário.
-Pré-requisitos
-Para executar este projeto, você precisará das seguintes ferramentas:
+# Conversor de Moedas em Java
 
-Java JDK 8 ou superior
-IDE de sua preferência (como IntelliJ IDEA, Eclipse, etc.)
-Chave de API da ExchangeRate-API (substituir YOUR-API-KEY no código pelo seu próprio)
+Este projeto é um Conversor de Moedas desenvolvido em Java utilizando a IDE IntelliJ. Ele utiliza uma API de taxas de câmbio para obter as taxas mais recentes e realizar conversões entre diferentes moedas.
 
+## Funcionalidades
 
-Executando o Projeto
-Compile e execute a classe Main.java na sua IDE.
+- Conversão dinâmica de moedas baseada nas taxas de câmbio atuais.
+- Suporte para várias opções de conversão de moedas, incluindo USD, ARS, BOB, BRL, CLP e COP.
+- Histórico de conversões realizado pelo usuário.
+- Registro de logs das operações de conversão utilizando `java.time`.
 
-No menu de opções, escolha a conversão desejada digitando o número correspondente.
+## Tecnologias Utilizadas
 
-Insira o valor a ser convertido quando solicitado.
+- Java
+- IntelliJ IDEA
+- Gson para manipulação de dados JSON
 
-O resultado da conversão será exibido na tela.
+## Como Usar
 
-Exemplo de Uso
-markdown
-Copiar código
-Menu de Conversão de Moedas:
-1. USD para ARS
-2. ARS para USD
-3. USD para BOB
-4. BOB para USD
-5. USD para BRL
-6. BRL para USD
-7. USD para CLP
-8. CLP para USD
-9. USD para COP
-10. COP para USD
-0. Sair
-Escolha uma opção: 1
-Digite o valor: 100
-Resultado: 982.40
-Contribuições
-Contribuições são bem-vindas! Sinta-se à vontade para enviar pull requests com melhorias, correções de bugs ou novas funcionalidades.
+### Pré-requisitos
 
-Licença
-Este projeto está licenciado sob a MIT License.
+- JDK 8 ou superior instalado
+- IntelliJ IDEA (ou outra IDE de sua preferência)
+
+### Configuração
+
+1. Clone este repositório para o seu ambiente local.
+2. Abra o projeto na IntelliJ IDEA.
+
+### Execução
+
+1. Compile e execute o projeto na sua IDE.
+2. O programa apresentará um menu de opções de conversão de moedas. Escolha uma das opções digitando o número correspondente e siga as instruções no console.
+3. O histórico de conversões será exibido quando a opção correspondente for selecionada no menu.
+
+### Exemplo de Uso
+
+```java
+// Exemplo de código para realizar uma conversão
+CurrencyConverter converter = new CurrencyConverter();
+double valorConvertido = converter.convertCurrency(100.0, "USD", "EUR");
+System.out.println("100 USD equivalem a " + valorConvertido + " EUR");
+```
+
+## Contribuições
+
+Contribuições são bem-vindas! Sinta-se à vontade para abrir um pull request para adicionar novas funcionalidades, melhorias de código ou correções de bugs.
+
+## Licença
+
+Este projeto está licenciado sob a [MIT License](LICENSE).
+
+---
+
+Adapte o conteúdo conforme necessário para refletir todos os detalhes específicos do seu projeto.
