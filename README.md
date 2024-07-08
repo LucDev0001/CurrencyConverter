@@ -11,15 +11,7 @@ Para executar este projeto, você precisará das seguintes ferramentas:
 Java JDK 8 ou superior
 IDE de sua preferência (como IntelliJ IDEA, Eclipse, etc.)
 Chave de API da ExchangeRate-API (substituir YOUR-API-KEY no código pelo seu próprio)
-Configuração
-Clone o repositório para sua máquina local:
 
-bash
-Copiar código
-git clone https://github.com/seu-usuario/conversor-de-moedas.git
-Abra o projeto na sua IDE.
-
-Substitua YOUR-API-KEY pela sua chave de API da ExchangeRate-API no arquivo ApiClient.java.
 
 Executando o Projeto
 Compile e execute a classe Main.java na sua IDE.
